@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="js_part/data.json"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js_part/names.js"></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/popper.js">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>          
+    <div class="container content">
+        <!-- <a href="#" class="nav-link" id="bd" data-toggle="modal" data-target="#exampleModal">Support</a>
+        <a href="#" class="nav-link" id="bd" data-toggle="modal" data-target="exampleModal">Support</a> -->
+
+          
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Корзина товаров</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"> &times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" id="test">
+                  
+                </div>
+                <div class="modal-footer">
+                  <p class="font-weight-bold">Общая стоимость: <span id="cartFinalPrice">0</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+  
+          <!--  -->
+        
+        
+        
+        <div class="row justify-content-center">
+            <div class="col-sm-4">                
+                    <p id="myRange"><input type="range" min="20" max="80" value=50> 
+                        <span id="rangeValue">50</span>
+                    </p>
+            </div>
+            <div class="col-sm-4">
+                <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#exampleModal">
+                    Корзина
+                    <span class="badge badge-light">0</span>
+                </button>                         
+            </div>
+        </div>
+        <div class="row">   
+                 
+            <div class="col-md-12 products">
+                <div class="row">
+                    
+                    
+                </div>         
+            </div>
+        </div>
+    </div>
+ 
+        <!--<div id="content">
+             <input type="range" min="20" max="80" step="1" value="50"> 
+            <ul>
+                <li v-for="r in result">
+                    <h1>{{r[0]['Group']}}</h1>
+                    <div v-for="(value,key) in r" v-if="key!='Group'">                        
+                        {{r[key]['Name']}} : {{r[key]['Price']}}
+                    </div>
+                </li>
+            </ul> 
+        </div>-->
+        <script>
+   $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+          </script>
+</body>
+
+</html>
